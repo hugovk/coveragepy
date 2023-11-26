@@ -39,9 +39,8 @@ exceptiongroup==1.2.0
     #   pytest
 execnet==2.0.2
     # via pytest-xdist
-filelock==3.12.4
+filelock==3.13.1
     # via
-    #   -c requirements/pins.pip
     #   tox
     #   virtualenv
 flaky==3.7.0
@@ -92,9 +91,8 @@ parso==0.8.3
     # via jedi
 pkginfo==1.9.6
     # via twine
-platformdirs==3.11.0
+platformdirs==4.0.0
     # via
-    #   -c requirements/pins.pip
     #   pylint
     #   tox
     #   virtualenv
@@ -172,9 +170,8 @@ urwid==2.2.3
     #   urwid-readline
 urwid-readline==0.13
     # via pudb
-virtualenv==20.24.5
+virtualenv==20.24.7
     # via
-    #   -c requirements/pins.pip
     #   -r requirements/pip.in
     #   tox
 zipp==3.17.0

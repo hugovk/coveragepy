@@ -6,18 +6,12 @@
 #
 distlib==0.3.7
     # via virtualenv
-filelock==3.12.4
-    # via
-    #   -c requirements/pins.pip
-    #   virtualenv
-platformdirs==3.11.0
-    # via
-    #   -c requirements/pins.pip
-    #   virtualenv
-virtualenv==20.24.5
-    # via
-    #   -c requirements/pins.pip
-    #   -r requirements/pip.in
+filelock==3.13.1
+    # via virtualenv
+platformdirs==4.0.0
+    # via virtualenv
+virtualenv==20.24.7
+    # via -r requirements/pip.in
 
 # The following packages are considered to be unsafe in a requirements file:
 pip==23.3.1

@@ -18,20 +18,16 @@ cibuildwheel==2.16.2
     # via -r requirements/kit.in
 colorama==0.4.6
     # via -r requirements/kit.in
-filelock==3.12.4
-    # via
-    #   -c requirements/pins.pip
-    #   cibuildwheel
+filelock==3.13.1
+    # via cibuildwheel
 importlib-metadata==6.8.0
     # via build
 packaging==23.2
     # via
     #   build
     #   cibuildwheel
-platformdirs==3.11.0
-    # via
-    #   -c requirements/pins.pip
-    #   cibuildwheel
+platformdirs==4.0.0
+    # via cibuildwheel
 pyelftools==0.30
     # via auditwheel
 pyproject-hooks==1.0.0
