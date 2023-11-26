@@ -67,6 +67,14 @@ jobs:
           cache: pip
           cache-dependency-path: 'requirements/*.pip'
 
+      - name: "WTF"
+        run: |
+          set -xe
+          python -VV
+          python -m site
+          python -m pip install filelock platformdirs virtualenv
+          python -m pip list
+
       - name: "Install dependencies"
         run: |
           set -xe
