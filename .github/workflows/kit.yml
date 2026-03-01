@@ -176,8 +176,8 @@ jobs:
         with:
           persist-credentials: false
 
-      - if: ${{ matrix.arch != 'ppc64le' }}
-        name: "Install Python"
+      - name: "Install Python"
+        if: ${{ matrix.arch != 'ppc64le' }}
         uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
         with:
           python-version: "${{ matrix.cipy }}"
@@ -187,8 +187,8 @@ jobs:
       # Rust toolchain is not currently installed on windows arm64 images.
       # We need it for nh3, needed by readme-renderer, needed by twine.
       # https://github.com/actions/partner-runner-images/issues/77
-      - if: ${{ matrix.os-version == '11-arm' }}
-        name: Setup rust
+      - name: "Setup Rust"
+        if: ${{ matrix.os-version == '11-arm' }}
         id: setup-rust
         shell: pwsh
         run: |
