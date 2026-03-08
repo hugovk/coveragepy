@@ -257,6 +257,8 @@ jobs:
     name: "Publish coverage report"
     needs: combine
     runs-on: ubuntu-latest
+    environment:
+      name: "publish report"
 
     steps:
       - name: "Show environment"
@@ -281,6 +283,7 @@ jobs:
       - name: "Checkout reports repo"
         if: ${{ github.ref == 'refs/heads/main' }}
         env:
+          # Fine-grained, with write access to coveragepy/metacov-reports
           TOKEN: ${{ secrets.COVERAGE_REPORTS_TOKEN }}
         run: |
           set -xe
@@ -333,6 +336,7 @@ jobs:
         # https://gist.githubusercontent.com/nedbat/8c6980f77988a327348f9b02bbaf67f5
         uses: schneegans/dynamic-badges-action@e9a478b16159b4d31420099ba146cdc50f134483 # v1.7.0
         with:
+          # Personal access token: gist access
           auth: ${{ secrets.METACOV_GIST_SECRET }}
           gistID: 8c6980f77988a327348f9b02bbaf67f5
           filename: metacov.json
