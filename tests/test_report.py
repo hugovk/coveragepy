@@ -905,7 +905,7 @@ class SummaryTest(UsingModulesMixin, CoverageTest):
                 id="cross-platform-punctuation",
             ),
             pytest.param(
-                "\\",  # seperate only to make test failure messages easy to read
+                "\\",  # separate only to make test failure messages easy to read
                 set("\\"),
                 "/",  # munged to forward slash by get_report
                 id="backslash-untouched",

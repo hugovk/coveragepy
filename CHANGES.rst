@@ -23,8 +23,13 @@ upgrading your version of coverage.py.
 Unreleased
 ----------
 
-Nothing yet.
+- Fix: the markdown-formatted coverage report didn't fully escape special
+  characters in file paths (`issue 2141`_). This would be very unlikely to
+  cause a problem, but now it's done properly, thanks to `Ellie Ayla
+  <pull 2142_>`_.
 
+.. _issue 2141: https://github.com/coveragepy/coveragepy/issues/2141
+.. _pull 2142: https://github.com/coveragepy/coveragepy/pull/2142
 
 .. start-releases
 

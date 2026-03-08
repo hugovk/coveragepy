@@ -126,7 +126,11 @@ class CoverageTest(
         return mod
 
     def get_report(
-        self, cov: Coverage, squeeze: bool = True, output_format: str | None = None, **kwargs: Any
+        self,
+        cov: Coverage,
+        squeeze: bool = True,
+        output_format: str | None = None,
+        **kwargs: Any,
     ) -> str:
         """Get the report from `cov`, and canonicalize it."""
         repout = io.StringIO()

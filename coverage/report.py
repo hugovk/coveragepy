@@ -5,9 +5,9 @@
 
 from __future__ import annotations
 
+import string
 import sys
 from collections.abc import Iterable
-from string import punctuation
 from typing import IO, TYPE_CHECKING, Any
 
 from coverage.exceptions import ConfigError, NoDataError
@@ -20,14 +20,14 @@ from coverage.types import TMorfs
 if TYPE_CHECKING:
     from coverage import Coverage
 
-ESCAPE_PUNCTUATION_TABLE = "".maketrans(
-    {char: f"\\{char}" for char in punctuation if char not in ".,/-"}
+MARKDOWN_ESCAPES = str.maketrans(
+    {char: f"\\{char}" for char in string.punctuation if char not in ".,/-"}
 )
 
 
 def escape_markdown(text: str) -> str:
     """Prefix all characters meaningful in markdown tables with backslashes."""
-    return text.translate(ESCAPE_PUNCTUATION_TABLE)
+    return text.translate(MARKDOWN_ESCAPES)
 
 
 class SummaryReporter:
