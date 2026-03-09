@@ -12,11 +12,11 @@ execnet==2.1.2
     # via pytest-xdist
 flaky==3.8.1
     # via -r requirements/pytest.in
-hypothesis==6.151.6
+hypothesis==6.151.9
     # via -r requirements/pytest.in
 iniconfig==2.3.0
     # via pytest
-librt==0.7.8 ; platform_python_implementation != 'PyPy'
+librt==0.8.1 ; platform_python_implementation != 'PyPy'
     # via mypy
 mypy==1.19.1
     # via -r requirements/mypy.in
