@@ -70,7 +70,7 @@ importlib-metadata==8.7.1 ; (python_full_version < '3.10.2' and platform_machine
     #   keyring
 iniconfig==2.3.0
     # via pytest
-isort==8.0.0
+isort==8.0.1
     # via pylint
 jaraco-classes==3.4.0 ; platform_machine != 'ppc64le' and platform_machine != 's390x'
     # via keyring
