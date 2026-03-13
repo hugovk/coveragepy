@@ -31,9 +31,13 @@ Unreleased
   cause a problem, but now it's done properly, thanks to `Ellie Ayla
   <pull 2142_>`_.
 
+- Fix: the C extension wouldn't build on VS2019, but now it does (`issue
+  2145`_).
+
 .. _issue 2138: https://github.com/coveragepy/coveragepy/issues/2138
 .. _issue 2141: https://github.com/coveragepy/coveragepy/issues/2141
 .. _pull 2142: https://github.com/coveragepy/coveragepy/pull/2142
+.. _issue 2145: https://github.com/coveragepy/coveragepy/issues/2145
 
 .. start-releases
 
