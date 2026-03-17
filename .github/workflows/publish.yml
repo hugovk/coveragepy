@@ -29,7 +29,7 @@ concurrency:
 jobs:
   find-run:
     name: "Find latest kit.yml run"
-    runs-on: "ubuntu-latest"
+    runs-on: ubuntu-latest
     outputs:
       run-id: ${{ steps.run-id.outputs.run-id }}
 
@@ -56,7 +56,7 @@ jobs:
     permissions:
       id-token: write       # needed for actions/attest-build-provenance
       attestations: write   # needed for actions/attest-build-provenance
-    runs-on: "ubuntu-latest"
+    runs-on: ubuntu-latest
     environment:
       name: "testpypi"
     needs:
@@ -96,7 +96,7 @@ jobs:
     permissions:
       id-token: write       # needed for actions/attest-build-provenance
       attestations: write   # needed for actions/attest-build-provenance
-    runs-on: "ubuntu-latest"
+    runs-on: ubuntu-latest
     environment:
       name: "pypi"
     needs:
