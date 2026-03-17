@@ -20,8 +20,12 @@ upgrading your version of coverage.py.
     ..  Version 9.8.1 — 2027-07-27
     ..  --------------------------
 
-Unreleased
-----------
+.. start-releases
+
+.. _changes_7-13-5:
+
+Version 7.13.5 — 2026-03-17
+---------------------------
 
 - Fix: `issue 2138`_ describes a memory leak that happened when repeatedly
   using the Coverage API with in-memory data. This is now fixed.
@@ -38,8 +42,6 @@ Unreleased
 .. _issue 2141: https://github.com/coveragepy/coveragepy/issues/2141
 .. _pull 2142: https://github.com/coveragepy/coveragepy/pull/2142
 .. _issue 2145: https://github.com/coveragepy/coveragepy/issues/2145
-
-.. start-releases
 
 .. _changes_7-13-4:
 
