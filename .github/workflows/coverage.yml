@@ -262,6 +262,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: "publish report"
+      deployment: false
 
     steps:
       - name: "Show environment"

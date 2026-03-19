@@ -59,6 +59,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: "testpypi"
+      deployment: false
     needs:
       - find-run
 
@@ -99,6 +100,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: "pypi"
+      deployment: false
     needs:
       - find-run
 
