@@ -29,6 +29,11 @@ Unreleased
   us know if you have a use case that requires it.  Thanks, `Tim Hatch
   <pull 2162_>`_. Closes `issue 1781`_.
 
+- Fix: the output from ``combine`` was too verbose, listing each file
+  considered. Now it shows a single line with the counts of files combined,
+  files skipped, and files with errors. The ``-q`` flag suppresses this line.
+  The old detailed lines are available with the new ``--debug=combine`` option.
+
 - Fix: running a Python file through a symlink now sets the sys.path correctly,
   matching regular Python behavior. Fixes `issue 2157`_.
 
