@@ -20,8 +20,12 @@ upgrading your version of coverage.py.
     ..  Version 9.8.1 — 2027-07-27
     ..  --------------------------
 
-Unreleased
-----------
+.. start-releases
+
+.. _changes_7-14-0:
+
+Version 7.14.0 — 2026-05-10
+---------------------------
 
 - Feature: now when running one of the reporting commands, if there are
   parallel data files that need combining, they will be implicitly combined
@@ -54,8 +58,6 @@ Unreleased
 .. _pull 2162: https://github.com/coveragepy/coveragepy/pull/2162
 .. _pull 2165: https://github.com/coveragepy/coveragepy/pull/2165
 
-
-.. start-releases
 
 .. _changes_7-13-5:
 

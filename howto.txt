@@ -1,7 +1,7 @@
 * Release checklist
 
 - Check that the current virtualenv matches the current coverage branch.
-    $ make sterile install
+    $ make sterile venv install
     $ python -V # should match lowest PYVERSIONS
 - start branch for release work
     $ make relbranch
