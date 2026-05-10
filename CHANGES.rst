@@ -37,6 +37,12 @@ Unreleased
 - Fix: running a Python file through a symlink now sets the sys.path correctly,
   matching regular Python behavior. Fixes `issue 2157`_.
 
+- Fix: ``Collector.flush_data`` could fail with "RuntimeError: Set changed
+  size during iteration" when a tracer in another thread added a line to the
+  per-file set that ``add_lines`` (or ``add_arcs``) was iterating. The values
+  passed to ``CoverageData`` are now snapshotted via ``dict.copy()`` and
+  ``set.copy()``, which are atomic under the GIL.
+
 - Fix: the soft keyword ``lazy`` is now bolded in HTML reports.
 
 - We are no longer testing eventlet support. Eventlet started issuing stern
