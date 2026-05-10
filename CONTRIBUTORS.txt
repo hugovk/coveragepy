@@ -13,6 +13,7 @@ Aleksi Torhamo
 Alex Gaynor
 Alex Groce
 Alex Sandro
+Alex Vandiver
 Alexander Todorov
 Alexander Walters
 Alpha Chen

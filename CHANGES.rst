@@ -41,7 +41,8 @@ Unreleased
   size during iteration" when a tracer in another thread added a line to the
   per-file set that ``add_lines`` (or ``add_arcs``) was iterating. The values
   passed to ``CoverageData`` are now snapshotted via ``dict.copy()`` and
-  ``set.copy()``, which are atomic under the GIL.
+  ``set.copy()``, which are atomic under the GIL. Thanks, `Alex Vandiver <pull
+  2165_>`_.
 
 - Fix: the soft keyword ``lazy`` is now bolded in HTML reports.
 
@@ -51,6 +52,7 @@ Unreleased
 .. _issue 1781: https://github.com/coveragepy/coveragepy/issues/1781
 .. _issue 2157: https://github.com/coveragepy/coveragepy/issues/2157
 .. _pull 2162: https://github.com/coveragepy/coveragepy/pull/2162
+.. _pull 2165: https://github.com/coveragepy/coveragepy/pull/2165
 
 
 .. start-releases
