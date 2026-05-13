@@ -23,7 +23,13 @@ upgrading your version of coverage.py.
 Unreleased
 ----------
 
-Nothing yet.
+- Fix: the HTML report used typographic niceties to make file paths more
+  readable by adding a small amount of space around slashes. Those spaces
+  interfered with searching the page for file paths of interest. Now the report
+  uses CSS to accomplish the same visual tweak so that searches with slashes
+  work correctly. Closes `issue 2170`_.
+
+.. _issue 2170: https://github.com/coveragepy/coveragepy/issues/2170
 
 
 .. start-releases
